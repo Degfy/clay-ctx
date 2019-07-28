@@ -1,0 +1,42 @@
+{
+    "name": "clay-ctx",
+    "version": "1.0.0",
+    "description": "super clay context",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "test-cov": "jest --coverage --runInBand --forceExit",
+        "lint": "eslint index.js lib test"
+    },
+    "keywords": [
+        "clay context",
+        "super clay"
+    ],
+    "author": "degfy@sina.com",
+    "license": "ISC",
+    "engines": {
+        "node": ">= 8.1.4"
+    },
+    "files": [
+        "index.js",
+        "lib"
+    ],
+    "jest": {
+        "testMatch": [
+            "**/test/!(helpers)/*.js"
+        ],
+        "coverageReporters": [
+            "text-summary",
+            "lcov"
+        ],
+        "bail": true,
+        "testEnvironment": "node"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "^6.0.1",
+        "babel-eslint": "^10.0.2",
+        "jest": "^24.8.0",
+        "supertest": "^4.0.2"
+    }
+}
